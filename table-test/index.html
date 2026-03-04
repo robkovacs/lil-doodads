@@ -17,6 +17,7 @@
       width: 100%;
       border-collapse: collapse;
       position: relative;
+      margin-bottom: 1.5rem;
     }
 
     thead {
@@ -181,6 +182,27 @@
       color: white;
     }
 
+
+    .footnote {
+      background-color: #fff3df;
+      color: #1c1d1f;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .footnote h3 {
+      margin-top: 0;
+      font-size: 0.875rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .footnote p {
+      margin: 0;
+      font-size: 0.875rem;
+      line-height: 1.38;
+    }
+
     @media (min-width: 30rem) {
       body {
         padding: 1.25rem;
@@ -256,16 +278,16 @@
           <a href="#paystub-meg-alodon" class="row-link" aria-labelledby="name-meg-alodon"></a>
         </td>
         <td class="total-payments" data-label="Total payments">
-          <div class="value">$4,587.25</div>
+          <div class="value">$5,000.00</div>
         </td>
         <td class="withholdings" data-label="Withholdings">
-          <div class="value">$1,000.00</div>
+          <div class="value">$1,387.43</div>
         </td>
         <td class="deductions" data-label="Deductions">
-          <div class="value">$238.56</div>
+          <div class="value">$342.61</div>
         </td>
         <td class="net-pay" data-label="Net pay">
-          <div class="value">$3,348.69</div>
+          <div class="value">$3,269.96</div>
         </td>
       </tr>
       <tr>
@@ -274,16 +296,16 @@
           <a href="#paystub-dina-nychus" class="row-link" aria-labelledby="name-dina-nychus"></a>
         </td>
         <td class="total-payments" data-label="Total payments">
-          <div class="value">$3,874.61</div>
+          <div class="value">$4,583.33</div>
         </td>
         <td class="withholdings" data-label="Withholdings">
-          <div class="value">$1,000.00</div>
+          <div class="value">$1,248.27</div>
         </td>
         <td class="deductions" data-label="Deductions">
-          <div class="value">$46.15</div>
+          <div class="value">$301.49</div>
         </td>
         <td class="net-pay" data-label="Net pay">
-          <div class="value">$2,828.46</div>
+          <div class="value">$3,033.57</div>
         </td>
       </tr>
       <tr>
@@ -292,16 +314,16 @@
           <a href="#paystub-paris-aurolophus" class="row-link" aria-labelledby="name-paris-aurolophus"></a>
         </td>
         <td class="total-payments" data-label="Total payments">
-          <div class="value">$3,859.78</div>
+          <div class="value">$4,375.00</div>
         </td>
         <td class="withholdings" data-label="Withholdings">
-          <div class="value">$1,000.00</div>
+          <div class="value">$1,196.83</div>
         </td>
         <td class="deductions" data-label="Deductions">
-          <div class="value">$42.14</div>
+          <div class="value">$278.24</div>
         </td>
         <td class="net-pay" data-label="Net pay">
-          <div class="value">$2,817.64</div>
+          <div class="value">$2,899.93</div>
         </td>
       </tr>
       <tr>
@@ -310,16 +332,16 @@
           <a href="#paystub-iggy-juanadon" class="row-link" aria-labelledby="name-iggy-juanadon"></a>
         </td>
         <td class="total-payments" data-label="Total payments">
-          <div class="value">$6,045.12</div>
+          <div class="value">$7,500.00</div>
         </td>
         <td class="withholdings" data-label="Withholdings">
-          <div class="value">$1,000.00</div>
+          <div class="value">$2,413.65</div>
         </td>
         <td class="deductions" data-label="Deductions">
-          <div class="value">$632.18</div>
+          <div class="value">$597.28</div>
         </td>
         <td class="net-pay" data-label="Net pay">
-          <div class="value">$4,412.94</div>
+          <div class="value">$4,489.07</div>
         </td>
       </tr>
       <tr>
@@ -328,20 +350,25 @@
           <a href="#paystub-donald-gennaro" class="row-link" aria-labelledby="name-donald-gennaro"></a>
         </td>
         <td class="total-payments" data-label="Total payments">
-          <div class="value">$5,213.45</div>
+          <div class="value">$6,250.00</div>
         </td>
         <td class="withholdings" data-label="Withholdings">
-          <div class="value">$1,000.00</div>
+          <div class="value">$1,892.34</div>
         </td>
         <td class="deductions" data-label="Deductions">
-          <div class="value">$407.63</div>
+          <div class="value">$453.71</div>
         </td>
         <td class="net-pay" data-label="Net pay">
-          <div class="value">$3,805.82</div>
+          <div class="value">$3,903.95</div>
         </td>
       </tr>
     </tbody>
   </table>
+
+  <div class="footnote">
+    <h3>Known issue!</h3>
+    <p>Depending on where you initiate your selection from, the table headers may not be included. If you start from above the table, you should get it; but starting from the left of the first row, you might not. Included the "copy table" button as an option that guarantees the header row is included.
+  </div>
 
   <script>
     // Lock button width to initial size

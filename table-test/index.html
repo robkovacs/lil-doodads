@@ -79,6 +79,14 @@
       align-items: center;
     }
 
+    tbody tr td[data-label]::before {
+      content: attr(data-label);
+      font-size: 0.875rem;
+      text-align: left;
+      color: #5e6167;
+      position: relative;
+    }
+
     .name {
       display: flex;
       flex-direction: column;
@@ -103,13 +111,6 @@
     .row-link:focus,
     .row-link:focus-visible {
       outline: none;
-    }
-
-    .label {
-      font-size: 0.875rem;
-      text-align: left;
-      color: #5e6167;
-      position: relative;
     }
 
     .value {
@@ -219,7 +220,7 @@
         align-items: flex-start;
       }
 
-      .label {
+      tbody tr td[data-label]::before {
         user-select: none;
         text-align: right;
       }
@@ -254,20 +255,16 @@
           <span class="name-text" id="name-meg-alodon">Meg Alodon</span>
           <a href="#paystub-meg-alodon" class="row-link" aria-labelledby="name-meg-alodon"></a>
         </td>
-        <td class="total-payments">
-          <div class="label">Total payments</div>
+        <td class="total-payments" data-label="Total payments">
           <div class="value">$4,587.25</div>
         </td>
-        <td class="withholdings">
-          <div class="label">Withholdings</div>
+        <td class="withholdings" data-label="Withholdings">
           <div class="value">$1,000.00</div>
         </td>
-        <td class="deductions">
-          <div class="label">Deductions</div>
+        <td class="deductions" data-label="Deductions">
           <div class="value">$238.56</div>
         </td>
-        <td class="net-pay">
-          <div class="label">Net pay</div>
+        <td class="net-pay" data-label="Net pay">
           <div class="value">$3,348.69</div>
         </td>
       </tr>
@@ -276,20 +273,16 @@
           <span class="name-text" id="name-dina-nychus">Dina Nychus</span>
           <a href="#paystub-dina-nychus" class="row-link" aria-labelledby="name-dina-nychus"></a>
         </td>
-        <td class="total-payments">
-          <div class="label">Total payments</div>
+        <td class="total-payments" data-label="Total payments">
           <div class="value">$3,874.61</div>
         </td>
-        <td class="withholdings">
-          <div class="label">Withholdings</div>
+        <td class="withholdings" data-label="Withholdings">
           <div class="value">$1,000.00</div>
         </td>
-        <td class="deductions">
-          <div class="label">Deductions</div>
+        <td class="deductions" data-label="Deductions">
           <div class="value">$46.15</div>
         </td>
-        <td class="net-pay">
-          <div class="label">Net pay</div>
+        <td class="net-pay" data-label="Net pay">
           <div class="value">$2,828.46</div>
         </td>
       </tr>
@@ -298,20 +291,16 @@
           <span class="name-text" id="name-paris-aurolophus">Paris Aurolophus</span>
           <a href="#paystub-paris-aurolophus" class="row-link" aria-labelledby="name-paris-aurolophus"></a>
         </td>
-        <td class="total-payments">
-          <div class="label">Total payments</div>
+        <td class="total-payments" data-label="Total payments">
           <div class="value">$3,859.78</div>
         </td>
-        <td class="withholdings">
-          <div class="label">Withholdings</div>
+        <td class="withholdings" data-label="Withholdings">
           <div class="value">$1,000.00</div>
         </td>
-        <td class="deductions">
-          <div class="label">Deductions</div>
+        <td class="deductions" data-label="Deductions">
           <div class="value">$42.14</div>
         </td>
-        <td class="net-pay">
-          <div class="label">Net pay</div>
+        <td class="net-pay" data-label="Net pay">
           <div class="value">$2,817.64</div>
         </td>
       </tr>
@@ -320,20 +309,16 @@
           <span class="name-text" id="name-iggy-juanadon">Iggy Juanadon</span>
           <a href="#paystub-iggy-juanadon" class="row-link" aria-labelledby="name-iggy-juanadon"></a>
         </td>
-        <td class="total-payments">
-          <div class="label">Total payments</div>
+        <td class="total-payments" data-label="Total payments">
           <div class="value">$6,045.12</div>
         </td>
-        <td class="withholdings">
-          <div class="label">Withholdings</div>
+        <td class="withholdings" data-label="Withholdings">
           <div class="value">$1,000.00</div>
         </td>
-        <td class="deductions">
-          <div class="label">Deductions</div>
+        <td class="deductions" data-label="Deductions">
           <div class="value">$632.18</div>
         </td>
-        <td class="net-pay">
-          <div class="label">Net pay</div>
+        <td class="net-pay" data-label="Net pay">
           <div class="value">$4,412.94</div>
         </td>
       </tr>
@@ -342,20 +327,16 @@
           <span class="name-text" id="name-donald-gennaro">Donald Gennaro</span>
           <a href="#paystub-donald-gennaro" class="row-link" aria-labelledby="name-donald-gennaro"></a>
         </td>
-        <td class="total-payments">
-          <div class="label">Total payments</div>
+        <td class="total-payments" data-label="Total payments">
           <div class="value">$5,213.45</div>
         </td>
-        <td class="withholdings">
-          <div class="label">Withholdings</div>
+        <td class="withholdings" data-label="Withholdings">
           <div class="value">$1,000.00</div>
         </td>
-        <td class="deductions">
-          <div class="label">Deductions</div>
+        <td class="deductions" data-label="Deductions">
           <div class="value">$407.63</div>
         </td>
-        <td class="net-pay">
-          <div class="label">Net pay</div>
+        <td class="net-pay" data-label="Net pay">
           <div class="value">$3,805.82</div>
         </td>
       </tr>

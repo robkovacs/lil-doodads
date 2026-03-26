@@ -1,0 +1,69 @@
+<style>
+    :root {
+        --gradient-color-1: #0092F6;
+        --gradient-color-2: #6AC7FF;
+        --gradient-color-3: #E5F3FF;
+        --gradient-color-4: #29A545;
+    }
+
+    svg {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #fill stop:nth-child(1) {
+        stop-color: var(--gradient-color-1);
+    }
+
+    #fill stop:nth-child(2) {
+        stop-color: var(--gradient-color-2);
+    }
+
+    #fill stop:nth-child(3) {
+        stop-color: var(--gradient-color-3);
+    }
+
+    #fill stop:nth-child(4) {
+        stop-color: var(--gradient-color-4);
+    }
+
+    a {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
+        color: #00c;
+    }
+
+
+    a:visited {
+        color: #00c;
+    }
+</style>
+<a href="index.html">switch to Option 1</a>
+<svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter)">
+        <path
+            d="M-852.491 -233.863C-757.825 -1026.26 750.242 -1349.11 1336.39 -439.906C2256.03 986.577 -172.647 967.304 535.586 1784.05C973.518 2289.08 1203.02 2070.93 1844.17 1722.9C2485.32 1374.86 1522.28 301.936 1092.04 536.611C449.359 887.165 -947.156 558.536 -852.491 -233.863Z"
+            fill="url(#fill)" />
+    </g>
+    <defs>
+        <filter id="filter" x="-1093.32" y="-1226.31" width="3387.73" height="3544.2" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="118.125" result="effect1_foregroundBlur_5440_49" />
+        </filter>
+        <linearGradient id="fill" x1="-33.7891" y1="47.2691" x2="1913.78" y2="1090.86" gradientUnits="userSpaceOnUse">
+            <stop />
+            <stop offset="0.22" />
+            <stop offset="0.619267" />
+            <stop offset="0.993911" />
+        </linearGradient>
+    </defs>
+</svg>

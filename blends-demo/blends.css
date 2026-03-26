@@ -78,6 +78,8 @@
 
 svg {
     background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
 }
 
 #fill stop:nth-child(1) {

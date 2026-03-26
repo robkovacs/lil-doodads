@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="blends.css">
     <style>
@@ -17,26 +18,23 @@
 </head>
 <body class="light blue">
     <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="filter" x="0" y="0" width="1920" height="1080" filterUnits="userSpaceOnUse">
+                <feGaussianBlur stdDeviation="118.125" />
+            </filter>
+            <linearGradient id="fill" x1="-33.7891" y1="47.2691" x2="1913.78" y2="1090.86"
+                gradientUnits="userSpaceOnUse">
+                <stop/>
+                <stop offset="0.22"/>
+                <stop offset="0.619267"/>
+                <stop offset="0.993911"/>
+            </linearGradient>
+        </defs>
         <g filter="url(#filter)">
             <path
                 d="M-852.491 -233.863C-757.825 -1026.26 750.242 -1349.11 1336.39 -439.906C2256.03 986.577 -172.647 967.304 535.586 1784.05C973.518 2289.08 1203.02 2070.93 1844.17 1722.9C2485.32 1374.86 1522.28 301.936 1092.04 536.611C449.359 887.165 -947.156 558.536 -852.491 -233.863Z"
                 fill="url(#fill)" />
         </g>
-        <defs>
-            <filter id="filter" x="-1093.32" y="-1226.31" width="3387.73" height="3544.2" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" />
-                <feGaussianBlur stdDeviation="118.125" />
-            </filter>
-            <linearGradient id="fill" x1="-33.7891" y1="47.2691" x2="1913.78" y2="1090.86"
-                gradientUnits="userSpaceOnUse">
-                <stop />
-                <stop offset="0.22" />
-                <stop offset="0.619267" />
-                <stop offset="0.993911" />
-            </linearGradient>
-        </defs>
     </svg>
     <select>
         <option disabled selected value="">Choose a color</option>

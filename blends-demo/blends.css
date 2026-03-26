@@ -7,8 +7,9 @@
 }
 
 .light.blue {
-    --color-1: #43a9ff;
-    --color-2: #43a9ff;
+    --color-1: #43A9ff;
+    --color-2: #43A9ff;
+    --display-color-2: none;
     --color-3: #C7E8FF;
     --color-4: #E5F3FF;
 }
@@ -44,6 +45,7 @@
 .dark.blue {
     --color-1: #0092F6;
     --color-2: #0092F6;
+    --display-color-2: none;
     --color-3: #001166;
     --color-4: #0051B9;
 }
@@ -88,6 +90,7 @@ svg {
 
 #fill stop:nth-child(2) {
     stop-color: var(--color-2);
+    display: var(--display-color-2, inline);
 }
 
 #fill stop:nth-child(3) {
